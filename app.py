@@ -1,7 +1,10 @@
+from elasticsearch import Elasticsearch
 from flask import Flask, render_template
 import os
 
 app = Flask(__name__)
+
+es = Elasticsearch(host='elastic')
 
 picFolder=os.path.join('static','pics')
 
