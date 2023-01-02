@@ -4,8 +4,6 @@ import os
 
 app = Flask(__name__)
 
-es = Elasticsearch(host='elastic')
-
 picFolder=os.path.join('static','pics')
 
 app.config['UPLOAD_FOLDER']=picFolder
